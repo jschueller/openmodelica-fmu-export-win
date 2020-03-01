@@ -8,7 +8,7 @@ project (wrapper C)
 message(STATUS "CMAKE_SIZEOF_VOID_P=${CMAKE_SIZEOF_VOID_P}")
 
 # openmodelica uses -Bstatic
-add_library (cwrapper STATIC wrapper.c)
+add_library (cwrapper SHARED wrapper.c)
 set_target_properties (cwrapper PROPERTIES POSITION_INDEPENDENT_CODE ON)
 # MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 set_target_properties (cwrapper PROPERTIES ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR} LIBRARY_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR} RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR})

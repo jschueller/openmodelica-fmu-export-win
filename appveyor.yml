@@ -7,7 +7,7 @@ build_script:
   - mo2fmu deviation
   - cmake -DCMAKE_GENERATOR_PLATFORM=x64 .
   - cmake --build . --config Release
-  - copy cwrapper.lib libcwrapper.lib
+  #- copy cwrapper.lib libcwrapper.lib
   - mo2fmu deviation_c
   - dir /p C:\projects\openmodelica-fmu-export-win\
   #- dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp
