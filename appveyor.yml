@@ -4,4 +4,4 @@ install:
   - omc --version
 
 build_script:
-  - omc export.mos
+  - omc mo2fmu.mos
