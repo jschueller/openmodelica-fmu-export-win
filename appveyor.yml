@@ -4,4 +4,13 @@ install:
   - omc --version
 
 build_script:
-  - omc mo2fmu.mos
+  - mo2fmu deviation
+  - cmake -DCMAKE_GENERATOR_PLATFORM=x64 .
+  - cmake --build . --config Release
+  - copy cwrapper.lib libcwrapper.lib
+  - mo2fmu deviation_c
+  - dir /p C:\projects\openmodelica-fmu-export-win\
+  - dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp
+  - dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp\sources
+  - dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp\resources
+  - type C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp\resources\static.log
