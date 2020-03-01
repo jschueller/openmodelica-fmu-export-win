@@ -10,7 +10,7 @@ build_script:
   - copy cwrapper.lib libcwrapper.lib
   - mo2fmu deviation_c
   - dir /p C:\projects\openmodelica-fmu-export-win\
-  - dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp
-  - dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp\sources
-  - dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp\resources
-  - type C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp\resources\static.log
+  #- dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp
+  #- dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp\sources
+  #- dir /p C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp\resources
+  #- type C:\projects\openmodelica-fmu-export-win\deviation_c.fmutmp\resources\static.log
