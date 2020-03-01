@@ -1,0 +1,7 @@
+install:
+  - choco install openmodelica --version=1.14.1
+  - set PATH=%PATH%;C:\Program Files\OpenModelica1.14.1-64bit\bin
+  - omc --version
+
+build_script:
+  - omc export.mos
